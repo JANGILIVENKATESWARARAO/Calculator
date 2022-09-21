@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link href="Calculator.css" rel="stylesheet" />
+</head>
+<body>
+    <form class="Calculator" name="calc">
+        <input class="Display" type="text" name="Answer" value="" readonly />
+        <input class="btn" type="button" name="btn1" value="1" onclick="document.calc.Answer.value+='1'" />
+        <input class="btn" type="button" name="btn2" value="2" onclick="document.calc.Answer.value+='2'" />
+        <input class="btn" type="button" name="btn3" value="3" onclick="document.calc.Answer.value+='3'" />
+        <input class="btn" type="button" name="btn+" value="+" onclick="document.calc.Answer.value+='+'" />
+        <input class="btn" type="button" name="btn4" value="4" onclick="document.calc.Answer.value+='4'" />
+        <input class="btn" type="button" name="btn5" value="5" onclick="document.calc.Answer.value+='5'" />
+        <input class="btn" type="button" name="btn6" value="6" onclick="document.calc.Answer.value+='6'" />
+        <input class="btn" type="button" name="btn-" value="-" onclick="document.calc.Answer.value+='-'" />
+        <input class="btn" type="button" name="btn7" value="7" onclick="document.calc.Answer.value+='7'" />
+        <input class="btn" type="button" name="btn8" value="8" onclick="document.calc.Answer.value+='8'" />
+        <input class="btn" type="button" name="btn9" value="9" onclick="document.calc.Answer.value+='9'" />
+        <input class="btn" type="button" name="btn*" value="*" onclick="document.calc.Answer.value+='*'" />
+        <input class="btn btnClear" type="button" name="btnClear" value="C" onclick="document.calc.Answer.value =''" />
+        <input class="btn" type="button" name="btn0" value="0" onclick="document.calc.Answer.value+='0'" />
+        <input class="btn" type="button" name="btnDot" value="." onclick="document.calc.Answer.value+='.'" />
+        <input class="btn" type="button" name="btnEqual" value="=" onclick="document.calc.Answer.value = eval(calc.Answer.value)" />
+    </form>
+</body>
+</html>
